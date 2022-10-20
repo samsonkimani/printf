@@ -75,7 +75,7 @@ int print_integer(va_list arg_list)
 {
 	int num_length;
 
-	num_length = print_number(list);
+	num_length = print_number(arg_list);
 
 	return (num_length);
 
