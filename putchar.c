@@ -1,8 +1,9 @@
-##include "main.h'
+#include "main.h"
+
 /**
  * _putchar - print a character
  * @c:character
- * return: 1
+ * Return: 1
  */
 int _putchar(char c)
 {
