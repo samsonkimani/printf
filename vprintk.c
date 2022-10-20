@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * vprintk - determines which function to invoke and
+ * vprintz - determines which function to invoke and
  * returns the number of printed characters
  * @format: the format
  * @list: array to the function
@@ -10,7 +10,7 @@
  * Return: total number of characters printed
  */
 
-int vprintk(const char *format, print_obj list, va_list arg_list)
+int vprintz(const char *format, print_obj list[], va_list arg_list)
 {
 
 	int i, j, retun_val, printed_chars;
@@ -26,7 +26,7 @@ int vprintk(const char *format, print_obj list, va_list arg_list)
 				if (format[i + 1] == list[j].stm[0])
 				{
 					retun_val = list[j].f(arg_list);
-					if (return_val == -1)
+					if (retun_val == -1)
 						return (-1);
 					printed_chars += retun_val;
 					break;
@@ -52,3 +52,4 @@ int vprintk(const char *format, print_obj list, va_list arg_list)
 		}
 	}
 	return (printed_chars);
+}

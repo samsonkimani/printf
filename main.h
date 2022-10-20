@@ -13,13 +13,17 @@
 struct print_ob
 {
 	char *stm;
-	int (*f)(int);
-}
+	int (*f)(va_list);
+};
 
-typedef print_ob print_obj;
+typedef struct print_ob print_obj;
 
 /*main functions */
+int vprintz(const char *format, print_obj list[], va_list arg_list);
+int _putchar(char);
 int _printf(const char *format, ...);
-
+int print_character(va_list);
+int print_string(va_list);
+int print_percentage(va_list);
 
 #endif

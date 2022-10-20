@@ -16,16 +16,16 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"%", print_percentage},
 		{NULL, NULL}
-	}
+	};
 
 	va_list arg_list;
 
 	if (format == NULL)
 		return (-1);
 
-	va_start(format, arg_list);
+	va_start(arg_list, format);
 
-	printed_char_count = vprintk(format, list, arg_list);
+	printed_char_count = vprintz(format, list, arg_list);
 
 	va_end(arg_list);
 
