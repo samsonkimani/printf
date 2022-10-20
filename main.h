@@ -5,7 +5,11 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+/**
+ * struct print_ob - object to print function characters
+ * @stm:object
+ * @f:function pointer
+ */
 struct print_ob
 {
 	char *stm;
