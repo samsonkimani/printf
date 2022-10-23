@@ -12,7 +12,7 @@ int print_reversed(va_list arg_list)
 	char *str;
 	char *ptr;
 
-	str = va_arg(arg, char *);
+	str = va_arg(arg_list, char *);
 
 	if (str == NULL)
 		return (-1);
