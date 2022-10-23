@@ -3,7 +3,7 @@
 
 /**
  * rev_string - reverses a string in place
- * @s: string to reverse
+ * @s: string to be reverse
  * Return: A pointer to a character
  */
 
@@ -45,8 +45,8 @@ void write_base(char *str)
 }
 
 /**
- * base_len - Calculates the length for an octal number
- * @num: The number for which the length is being calculated
+ * base_len - Calculates the length of an octal number
+ * @num: The number for which the length is calculated
  * @base: Base to be calculated by
  * Return: An integer representing the length of a number
  */
