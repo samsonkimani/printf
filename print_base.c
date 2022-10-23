@@ -5,7 +5,7 @@ int hex_check(int, char);
 
 /**
  * print_binary - Converts a number from base 10 to binary
- * @arg_list: List of arguments passed to this function
+ * @arg_list: List of arguments passed
  * Return: The length of the number printed
  */
 
